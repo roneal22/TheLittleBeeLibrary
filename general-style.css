@@ -83,7 +83,7 @@ a, a:visited { color: #708090; }
     float: left;
     font-size: 3vw;
 }
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 745px) {
 	.column.main{
 		width: 75%;
 		top: 75;
@@ -102,7 +102,7 @@ article{
 	background-size: contain;
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 745px) {
 	#main_message {
     position: relative;
     width: 75%;
@@ -118,7 +118,7 @@ article{
 	h2{font-size: 7.5vw; margin: 0}
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 746px) {
 	#main_message {
     position: relative;
     width: 35%;
