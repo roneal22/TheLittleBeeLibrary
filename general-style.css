@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 	background-color: #faec93;	
 	font-family:  sans-serif;
@@ -14,6 +18,7 @@ header {
 	font-size:  2.5vw;
 	text-align: center;
 	margin-top: 0;
+	z-index: 999;
 }
 h1 {
     display: block;
@@ -33,6 +38,7 @@ nav {
 	width: 100%;
 	position: fixed;
 	left: 0;
+	margin-bottom: 10px;
 }
 
 a {
@@ -48,12 +54,83 @@ a {
 
 a, a:visited { color: #708090; }
 
-aside{
-	position: initial;
+.content{ bottom: 18px }
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column{
+	float: left;
+	padding-right: 10px;
+}
+
+.column.left{
 	height: 100%;
 	bottom: 0;
 	width: 25%;
 	left: 0;
+}
+
+.column.main{
+	position: relative;
+    height: 75%;
+    bottom: 18px;
+    width: 60%;
+    right: 0;
+    padding-top:150;
+    float: left;
+    font-size: 3vw;
+}
+@media screen and (max-width: 600px) {
+	.column.main{
+		width: 75%;
+		top: 75;
+		font-size: 4vw;
+
+	}
+}
+
+article{
+	bottom: 18px;
+	width:  100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position-x: right;
+    background-position-y: inherit;
+	background-size: contain;
+}
+
+@media screen and (max-width: 600px) {
+	#main_message {
+    position: relative;
+    width: 75%;
+    margin: 15px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.30);
+    border-radius: 10px;
+    border: 2px solid #F7DF4A;
+    top: 25%;
+    font-size: 5vw;
+    color: #FFFFFF;
+}
+	h2{font-size: 7.5vw; margin: 0}
+}
+
+@media screen and (min-width: 601px) {
+	#main_message {
+    position: relative;
+    width: 35%;
+    margin: 10px;
+    padding: 7px;
+    background-color: rgba(0,0,0,0.30);
+    border-radius: 10px;
+    border: 2px solid #F7DF4A;
+    top: 25%;
+    color: #FFFFFF;
+}
+	h2{font-size: 2.5vw; margin:  0}
 }
 
 #left_panel {
@@ -64,6 +141,7 @@ aside{
 	margin: 0;
 	padding: 0;
 }
+
 
 footer {
 	position: fixed;
