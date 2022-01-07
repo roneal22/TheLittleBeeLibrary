@@ -142,6 +142,13 @@ article{
 	padding: 0;
 }
 
+#right_panel {
+	position: absolute;
+	bottom: 18px;
+	right: 18px;
+	width: auto;
+	height: 50%;
+}
 
 footer {
 	position: fixed;
