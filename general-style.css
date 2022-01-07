@@ -9,19 +9,21 @@ header {
 	width: 100%;
 	background-color: #FFFFFF;
 	font-family:  sans-serif;
-	font-size:  3vw;
+	font-size:  2.5vw;
 	text-align: center;
 	margin-top: 0;
 }
 h1 {
     display: block;
-    margin-block-start: 0.3em;
-    margin-block-end: 0.3em;
+    margin-block-start: 0.15em;
+    margin-block-end: 0.15em;
 }
 ul {
-  list-style-type: none;
-  padding: 5px;
-  margin: 1%;
+	list-style-type: none;
+	padding: 1px;
+	/*margin: 0.5%;*/
+	margin-block-start: .5%;
+	margin-block-end: 1%;
 }
 nav {
 	background-color: #f7df4a;
@@ -40,6 +42,29 @@ a {
 	padding: 5px;
 	margin-left: 3vw;
 	margin-right: 1vw;
-	font-size: 4vw;}
+	font-size: 2vw;}
 
 a, a:visited { color: #708090; }
+
+aside{
+	bottom: 0;
+	left: 0;
+}
+
+#left_panel {
+	left: 0;
+	max-width: 20%; 
+	height: auto;
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	bottom: 0;
+	text-align: left;
+	background-color: #f7df4a;
+}
