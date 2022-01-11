@@ -54,7 +54,11 @@ a {
 
 a, a:visited { color: #708090; }
 
-.content{ bottom: 18px }
+.content{ 
+	position: relative;
+	bottom: 18px;
+}
+
 .content:after {
 	content: "";
 	display: table;
@@ -74,19 +78,16 @@ a, a:visited { color: #708090; }
 }
 
 .column.main{
-	position: relative;
-    height: 75%;
-    bottom: 18px;
-    width: 60%;
+	position: absolute;
+    height: 85%;
+    padding: 20px;
+    bottom: 0;
+    width: 75%;
     right: 0;
-    padding-top:150;
-    float: left;
     font-size: 3vw;
 }
 @media screen and (max-width: 745px) {
 	.column.main{
-		width: 75%;
-		top: 75;
 		font-size: 4vw;
 
 	}
