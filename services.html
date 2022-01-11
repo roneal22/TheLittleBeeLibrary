@@ -8,11 +8,23 @@
 		h2 {
 			font-size: 5vw;
 			font-family: 'Dosis', sans-serif;
-			text-align: center;
+			position: relative;
 		}
 		.column.main{
 			width: 80%;
 			padding-left: 40px;
+		}
+		.column.main::before{    
+      		content: "";
+      		background-image: url('hotel.jpg');
+      		background-size: contain;
+      		background-repeat: no-repeat;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width:  550px;
+			opacity: 0.5;
 		}
 	</style>
 </head>
@@ -32,14 +44,13 @@
 		<img id="left_panel" src="honeycomb.jpg"/>
 	</div>
 	<div class=" column main">
-		<!-- <p> -->
 		<br>
 		<h2>Products and Services</h2>
-		<br>
+		<p style="font-size: 2vw; position: relative; width: 50%; float: left;">
+			We busy bee builders specialize in building custom bee hotels for wild bees local to your area. Our customers range from natural history museums, to native plant gardens, school environmental programs to people's backyards. Did you know that there are over 400 species of bees in New England? Bee hotels provide different types of nesting material for many kinds of bees, and provide an amazing educational opportunity for those wanting to learn more about them. Order your own bee hotel today!
 
-		<br>	
+		</p>	
 	</div>
-	<img id="right_panel" src="hotel.jpg"/>
 </div>
 	<footer>all photos sourced from unsplash.com</footer>
 </body>
